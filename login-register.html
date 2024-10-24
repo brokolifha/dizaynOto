@@ -1,0 +1,345 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <!-- basic -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- mobile metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        
+        <!-- site metas -->
+        <title>DİZAYN OTO - Giriş/Kayıt</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- style css -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Responsive-->
+        <link rel="stylesheet" href="css/responsive.css">
+        <!-- fevicon -->
+        <link rel="icon" href="images/fevicon.png" type="image/gif" />
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+        <style>
+            body {
+               background-color: #f5f5f5;
+            }
+   
+            .container {
+               margin-top: 50px;
+            }
+   
+            .login-container {
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               border: 1px solid #ddd;
+               background-color: #fff;
+               padding: 20px;
+               border-radius: 10px;
+            }
+   
+            .login-box {
+               width: 45%;
+               padding: 20px;
+               background-color: #f9f9f9;
+               border: 1px solid #ddd;
+               border-radius: 5px;
+            }
+   
+            .divider {
+               width: 1px;
+               background-color: #ddd;
+               height: 100%;
+            }
+   
+            h2 {
+               text-align: center;
+            }
+   
+            input {
+               width: 100%;
+               padding: 10px;
+               margin: 10px 0;
+               border: 1px solid #ddd;
+               border-radius: 5px;
+            }
+   
+            button {
+               width: 100%;
+               padding: 10px;
+               background-color: #007bff;
+               color: white;
+               border: none;
+               border-radius: 5px;
+               cursor: pointer;
+            }
+   
+            button:hover {
+               background-color: #0056b3;
+            }
+   
+            .register-box {
+               margin-top: 20px;
+               text-align: center;
+            }
+   
+            .register-box-content {
+               display: none;
+               background-color: #f9f9f9;
+               padding: 20px;
+               border: 1px solid #ddd;
+               border-radius: 5px;
+            }
+   
+            .register-box button {
+               background-color: #28a745;
+            }
+   
+            .register-box button:hover {
+               background-color: #218838;
+            }
+         </style>
+    </head>
+    <!-- body -->
+    <body class="main-layout">
+        <!-- loader  -->
+        <div class="loader_bg">
+            <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+        </div>
+        <!-- end loader -->
+        <!-- header -->
+        <header>
+            <!-- header inner -->
+            <div class="header">
+                <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                            <div class="logo">
+                                <a href="index.html"><img src="images/Dükkan Logo.png" alt="#" /></a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarsExample04">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html"> Anasayfa  </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">Hakkımızda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="furnitures.html">İşlerimiz</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="campaigns.html">Kampanyalar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="testimonial.html">Referans</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">İletişim</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="login-register.html"><i class="fa fa-user-circle padd_right" aria-hidden="true"></i>Giriş Yap/Kayıt Ol</a>
+                                </li>
+                            </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+        
+        <!-- Giriş ve Kayıt Ol Bölümü -->
+        <body>
+            <div class="container">
+               <div class="login-container">
+                  <!-- Admin Girişi -->
+                  <div class="login-box">
+                     <h2>Admin Girişi</h2>
+                     <form id="adminLoginForm">
+                        <input type="text" id="adminUsername" placeholder="Kullanıcı Adı">
+                        <input type="password" id="adminPassword" placeholder="Şifre">
+                        <button type="button" onclick="adminLogin()">Giriş Yap</button>
+                     </form>
+                  </div>
+      
+                  <div class="divider"></div>
+      
+                  <!-- Kullanıcı Girişi -->
+                  <div class="login-box">
+                     <h2>Kullanıcı Girişi</h2>
+                     <form id="userLoginForm">
+                        <input type="text" id="userUsername" placeholder="Kullanıcı Adı">
+                        <input type="password" id="userPassword" placeholder="Şifre">
+                        <button type="button" onclick="loginUser()">Giriş Yap</button>
+                     </form>
+                  </div>
+               </div>
+      
+               <!-- Kayıt Ol Bölümü -->
+               <div class="register-box">
+                  <button type="button" onclick="toggleRegisterForm()">Kayıt Ol</button>
+                  <div class="register-box-content" id="registerBox">
+                     <h2>Kayıt Ol</h2>
+                     <form id="registerForm">
+                        <input type="text" id="registerUsername" placeholder="Kullanıcı Adı">
+                        <input type="password" id="registerPassword" placeholder="Şifre">
+                        <button type="button" onclick="registerUser()">Kayıt Ol</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+
+        <!--  footer -->
+        <footer id="contact">
+            <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="titlepage">
+                        <h2>İletişim</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <ul class="location_icon">
+                        <li><a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a>Lokasyon</li>
+                        <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a>+905318803741</li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>dizaynotoservis@outlook.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <form id="request" class="main_form">
+                        <div class="row">
+                            <div class="col-md-12 ">
+                                <input class="contactus" placeholder="Ad Soyad" type="type" name="Full Name"> 
+                            </div>
+                            <div class="col-md-12">
+                                <input class="contactus" placeholder="Email" type="type" name="Email"> 
+                            </div>
+                            <div class="col-md-12">
+                                <input class="contactus" placeholder="Telefon Numarası" type="type" name="Phone Number">                          
+                            </div>
+                            <div class="col-md-12">
+                                <textarea class="textarea" placeholder="Message" type="type" Message="Name">Mesaj </textarea>
+                            </div>
+                            <div class="col-sm-col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <button class="send_btn">Gönder</button>
+                            </div>
+                            <div class="col-sm-col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <ul class="social_icon">
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="map">
+                        <figure><img src="images/map.jpg" alt="#"/></figure>
+                        </div>
+                        <form class="bottom_form">
+                        <h3>Bülten</h3>
+                        <input class="enter" placeholder="Email Adresinizi giriniz" type="text" name="Enter your email">
+                        <button class="sub_btn">Abone Ol</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <p>Bütün Hakları Dizayn Oto Serviste Saklıdır</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+        <!-- Javascript files-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.0.0.min.js"></script>
+        <script src="js/custom.js"></script>
+
+        <script>
+            function adminLogin() {
+               const username = document.getElementById('adminUsername').value;
+               const password = document.getElementById('adminPassword').value;
+   
+               if (username === 'baris' && password === '12345678') {
+                  alert('Admin girişi başarılı!');
+                  window.location.href = 'admin-panel.html';
+               } else {
+                  alert('Hatalı kullanıcı adı veya şifre!');
+               }
+            }
+
+            function toggleRegisterForm() {
+               const registerBox = document.getElementById('registerBox');
+               if (registerBox.style.display === 'block') {
+                  registerBox.style.display = 'none';
+               } else {
+                  registerBox.style.display = 'block';
+               }
+            }
+   
+            function registerUser() {
+               const username = document.getElementById('registerUsername').value;
+               if (username) {
+                  alert(`Kayıt işleminiz tamamlandı ${username}`);
+               } else {
+                  alert('Lütfen bir kullanıcı adı girin.');
+               }
+            }
+
+            function loginUser(){
+                const username = document.getElementById('userUsername').value;
+                if(username){
+                    alert(`Giriş işleminiz tamamlandı ${username}`);
+                }else{
+                    alert('Lütfen tekrar deneyiniz!');
+                }
+            }
+
+         </script>
+    </body>
+    </html>
+
+
+
+    <!--Todo: Bu bölüm ikiye bölünecek, bir tarafta admin login, diğer tarafta user login olacak alt tarafta da kayıt ol boxları olabilir.-->
+    <!-- Detaylandıracağım -->
+
+
+    <!-- Admin paneline giriş yapılınca, önümüzde kullanıcıların olduğu bir panel çıkacak ama göstermelik backend'i olmadan, işte kullanıcı adı şifresi adı soyadı falan bilgileri olacak -->
+    <!-- Bunlara bakıp düzenleyebiliyormuş gibi göstermelik bir admin paneli olacak. Kullanıcı girişi sadece göstermelik olacak giriş yapılmayacak. Admin panelinide giriş için 
+    kullanıcı adı : baris, şifresi : 12345678 olacak. İf else ile kontrolü sağlanabilir. -->
+
+    <!-- Kayıt ol tarafında ise veriler girilecek ama herhangi bir backend olmadığı için kayıtlı olsun istemiyorum. Sadece bir tane alert çıkar yukarıdan, kayıt işleminiz tamamlandı {username}
+    tarzında bir alert olacak -->
